@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/philippadler/StudioProjects/AndroidRestFulWSExample/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/philippadler/StudioProjects/AndroidRestFulWSExample/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/philippadler/StudioProjects/AndroidRestFulWSExample/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/philippadler/StudioProjects/AndroidRestFulWSExample/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/philippadler/StudioProjects/AndroidRestFulWSExample/app/build/intermediates/res/merged/debug/menu/home.xml",
+        "source": "/Users/philippadler/StudioProjects/AndroidRestFulWSExample/app/src/main/res/menu/home.xml"
+    }
+]
