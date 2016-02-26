@@ -111,7 +111,7 @@ public class LoginActivity extends Activity {
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
-		client.post(this.getApplicationContext(), "https://glacial-tundra-57398.herokuapp.com/login", request, "application/json", new TextHttpResponseHandler() {
+		client.post(this.getApplicationContext(), "http://10.0.2.2:8080/login", request, "application/json", new TextHttpResponseHandler() {
 			//client.get("http://192.168.43.17:9999/useraccount/login/dologin",params ,new AsyncHttpResponseHandler() {
 			// When the response returned by REST has Http response code '200'
 
