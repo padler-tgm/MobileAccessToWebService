@@ -121,7 +121,7 @@ public class RegisterActivity extends Activity {
 		}
 		//client.get("http://192.168.43.17:9999/useraccount/register/doregister",params ,new AsyncHttpResponseHandler() {
 		//https://glacial-tundra-57398.herokuapp.com
-		client.post(this.getApplicationContext(), "http://10.0.2.2:8080/register", request, "application/json", new TextHttpResponseHandler() {
+		client.post(this.getApplicationContext(), "https://glacial-tundra-57398.herokuapp.com/register", request, "application/json", new TextHttpResponseHandler() {
 			@Override
 			public void onFailure(int statusCode, Header[] headers, String responseBody, Throwable error) {
 				// Hide Progress Dialog

@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.PersistentCookieStore;
 import com.loopj.android.http.RequestParams;
 import com.loopj.android.http.TextHttpResponseHandler;
 
@@ -103,7 +104,7 @@ public class LoginActivity extends Activity {
 		// Show Progress Dialog
 		 prgDialog.show();
 		 // Make RESTful webservice call using AsyncHttpClient object
-		 AsyncHttpClient client = new AsyncHttpClient();
+		 final AsyncHttpClient client = new AsyncHttpClient();
 		StringEntity request = null;
 		try {
 			request = new StringEntity(params.toString());
@@ -149,6 +150,7 @@ public class LoginActivity extends Activity {
 	 */
 	public void navigatetoHomeActivity(){
 		Intent homeIntent = new Intent(getApplicationContext(),HomeActivity.class);
+		homeIntent.putExtra("email",emailET.getText().toString());
 		homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(homeIntent);
 	}

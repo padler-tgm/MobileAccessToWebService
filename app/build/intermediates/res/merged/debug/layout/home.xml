@@ -6,14 +6,40 @@
     tools:context="com.prgguru.example.HomeActivity"
     tools:ignore="MergeRootFrame" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_gravity="fill_vertical"
-        android:layout_marginTop="20pt"
-        android:gravity="center_horizontal"
-        android:text="Welcome User"
-        android:textSize="25dip"
-        android:id="@+id/user" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <EditText
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Send message"
+            android:id="@+id/send"
+            android:layout_gravity="center"
+            android:onClick="sendMessage" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Leave Room"
+            android:id="@+id/leave"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="logoutUser" />
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:background="#d4d4d4"
+        android:id="@+id/table"></TableLayout>
 
 </FrameLayout>
